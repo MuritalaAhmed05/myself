@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Profile Card</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="profile-card">
+      <img
+        src="my_pic.png"
+        alt="Profile Picture"
+        data-testid="profilePicture"
+      />
+      <h1 data-testid="fullName">Muritala Ahmed</h1>
+      <h2 data-testid="jobTitle">Front-End Developer</h2>
+      <p data-testid="shortBio">
+        A detail-oriented front-end developer passionate about crafting clean,
+        user-friendly web interfaces. With expertise in responsive design and
+        modern web technologies, I aim to deliver intuitive and visually
+        appealing user experiences. Constantly striving to improve my skills and
+        stay updated with industry trends, I enjoy turning ideas into functional
+        and aesthetic digital solutions. Dedicated to collaboration and
+        problem-solving, I bring creativity and precision to every project I
+        work on.
+      </p>
+      <div class="location" data-testid="currentLocation">Lagos, Nigeria</div>
+      <div class="email" data-testid="emailAddress">
+        muritalaahmed407@gmail.com
+      </div>
+      <div class="utc-time" data-testid="currentTimeUTC"></div>
+      <div class="social-links" data-testid="socialLinks">
+        <a
+          href="https://www.linkedin.com/in/muritala-ahmed-03803226a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/MuritalaAhmed05" target="_blank">GitHub</a>
+        <a href="https://x.com/ahmed_muri50344?s=09" target="_blank">Twitter</a>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

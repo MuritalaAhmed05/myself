@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-card img {
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-card img:hover {
+    transform: scale(1.02);
+}
+
+.profile-card h1 {
+    font-size: 1.8em;
+    color: #2d3436;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.profile-card h2 {
+    font-size: 1.1em;
+    color: #636e72;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.profile-card p {
+    font-size: 0.95em;
+    color: #2d3436;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.profile-card .location,
+.profile-card .email,
+.profile-card .utc-time {
+    font-size: 0.9em;
+    color: #636e72;
+    margin-bottom: 12px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-card .location:hover,
+.profile-card .email:hover,
+.profile-card .utc-time:hover {
+    background-color: #e9ecef;
+}
+
+.profile-card .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.profile-card .social-links a {
+    text-decoration: none;
+    color: #1a73e8;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.profile-card .social-links a:hover {
+    background-color: #1a73e8;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 400px) {
+    .profile-card {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .profile-card h1 {
+        font-size: 1.5em;
+    }
+
+    .profile-card h2 {
+        font-size: 1em;
+    }
+}
